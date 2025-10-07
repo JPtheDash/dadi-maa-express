@@ -8,7 +8,13 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cap": "cap",
+    "cap:add": "cap add",
+    "cap:copy": "cap copy",
+    "cap:open": "cap open",
+    "cap:update": "cap update",
+    "build:android": "vite build && cap copy android && cap open android"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -62,6 +68,10 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/ios": "^6.0.0",
     "@dyad-sh/react-vite-component-tagger": "^0.8.0",
     "@eslint/js": "^9.9.0",
     "@tailwindcss/typography": "^0.5.15",
